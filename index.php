@@ -30,23 +30,30 @@
     <input type="text" id="value" name="value"></br>
     <label for="fx">Select currency</label></br>
     <select name="fx" id="fx">
-        <option value="eur" class="currencies" id="eur">EUR</option>
-        <option value="usd" class="currencies" id="usd">USD</option>
-        <option value="gbp" class="currencies" id="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
     </select></br>
     <input type="submit" name="submit" id="submit">
 </form>
-<p id="eurAmount">Amount in EUR is</p>
 
-<p id="result"
+<div>
 <?php
-if (isset($_GET['submit'])) {
     $value = $_GET['value'];
-    $eurValue = $value / 2.67;
-    echo "<p>" . number_format($eurValue,2) . "</p>";
-}
+    $fx = $_GET['fx'];
+    if ($fx == "EUR") {
+        $fxValue = $value / 2.70;
+    }
+    elseif ($fx == "USD") {
+        $fxValue = $value / 2.27;
+    }
+    elseif ($fx = "GBP") {
+        $fxValue = $value / 3.13;
+    }
+    echo "<p id='resultText'>Amount in " . $fx . " is</p>";
+    echo "<p id='result'>" . number_format($fxValue,2) . "</p>";
 ?>
-</p>
+</div>
 
 
 <footer>

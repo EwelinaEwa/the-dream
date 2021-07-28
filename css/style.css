@@ -30,18 +30,6 @@ form {
     color: #423F1D;
 }
 
-#submit {
-    border-style: none;
-    padding: 2px 8px;
-    color: #423F1D;
-    font-family: 'Righteous', cursive;
-    background-color: white;
-}
-
-#submit:hover {
-    cursor: pointer;
-}
-
 select {
     appearance: auto;
     border: none;
@@ -49,9 +37,23 @@ select {
     color: #423F1D;
     font-family: 'Righteous', cursive;
     margin-bottom: 5px;
+    width: 80px;
 }
 
-#eurAmount {
+#submit {
+    border-style: none;
+    padding: 2px 8px;
+    color: #423F1D;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    width: 80px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#resultText{
     margin-top: 30px;
 }
 
