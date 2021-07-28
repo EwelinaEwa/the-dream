@@ -18,17 +18,24 @@
 
 <p>Current exchange rate is:</p>
 <p>1 PT (Tongan paʻanga) = 0,37 EUR (Euro)</p>
-<form action="" method="get">
+<form action="index.php" method="get">
     <label for="value">Enter value in PT</label>
     <input type="text" id="value" name="value">
-    <input type="submit">
+    <input type="submit" name="submit">
 </form>
-<p>Amount in EUR is:</p>
-<p></p>
-<?php
+<p>Amount in EUR is</p>
 
+<?php
+if (isset($_GET['submit'])) {
+    $value = $_GET['value'];
+    $eurValue = $value * 2.67;
+    echo "<p>" . number_format($eurValue,2) . "</p>";
+}
 ?>
 
 
 </body>
 </html>
+
+
+
