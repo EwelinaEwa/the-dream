@@ -20,10 +20,20 @@
 <h1>WELCOME TO TONGA</h1>
 
 <p>The currency is: PT - Tongan paʻanga</p>
-<p>Current exchange rate: 1 PT = 0,37 EUR</p>
+<ul>Current exchange rates:
+    <li>1 PT = 0,37 EUR</li>
+    <li>1 PT = 0,44 USD</li>
+    <li>1 PT = 0,32 GBP</li>
+</ul>
 <form action="index.php" method="get">
     <label for="value">Enter value in PT</label></br>
-    <input type="text" id="value" name="value">
+    <input type="text" id="value" name="value"></br>
+    <label for="fx">Select currency</label></br>
+    <select name="fx" id="fx">
+        <option value="eur" class="currencies" id="eur">EUR</option>
+        <option value="usd" class="currencies" id="usd">USD</option>
+        <option value="gbp" class="currencies" id="GBP">GBP</option>
+    </select></br>
     <input type="submit" name="submit" id="submit">
 </form>
 <p id="eurAmount">Amount in EUR is</p>

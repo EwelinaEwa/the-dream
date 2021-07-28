@@ -24,21 +24,31 @@ form {
 
 #value {
     border-style: none;
-    opacity: 70%;
     width: 100px;
     padding: 2px;
     font-family: 'Righteous', cursive;
-
+    color: #423F1D;
 }
 
 #submit {
-    opacity: 90%;
-    background-color: #47443F;
     border-style: none;
     padding: 2px 8px;
-    color: white;
+    color: #423F1D;
     font-family: 'Righteous', cursive;
+    background-color: white;
+}
 
+#submit:hover {
+    cursor: pointer;
+}
+
+select {
+    appearance: auto;
+    border: none;
+    padding: 2px 8px;
+    color: #423F1D;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 5px;
 }
 
 #eurAmount {
