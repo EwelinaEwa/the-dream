@@ -11,28 +11,38 @@
     <title>The Dream</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<h1>Welcom to Tonga</h1>
+<h1>WELCOME TO TONGA</h1>
 
-<p>Current exchange rate is:</p>
-<p>1 PT (Tongan paʻanga) = 0,37 EUR (Euro)</p>
+<p>The currency is: PT - Tongan paʻanga</p>
+<p>Current exchange rate: 1 PT = 0,37 EUR</p>
 <form action="index.php" method="get">
-    <label for="value">Enter value in PT</label>
+    <label for="value">Enter value in PT</label></br>
     <input type="text" id="value" name="value">
-    <input type="submit" name="submit">
+    <input type="submit" name="submit" id="submit">
 </form>
-<p>Amount in EUR is</p>
+<p id="eurAmount">Amount in EUR is</p>
 
+<p id="result"
 <?php
 if (isset($_GET['submit'])) {
     $value = $_GET['value'];
-    $eurValue = $value * 2.67;
+    $eurValue = $value / 2.67;
     echo "<p>" . number_format($eurValue,2) . "</p>";
 }
 ?>
+</p>
 
+
+<footer>
+<p class="footer">Photo by <a href="https://unsplash.com/@russmail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vince Russell</a> on <a href="https://unsplash.com/s/photos/tonga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</p>
+</footer>
 
 </body>
 </html>

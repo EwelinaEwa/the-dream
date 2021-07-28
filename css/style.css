@@ -1,5 +1,63 @@
 body {
-    width: 500px;
-    margin: 50px auto;
-    line-height: 2;
+    background-image: url("../images/vince-russell-ohU3_3w0rG0-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin: 5% 3%;
 }
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+form {
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+#value {
+    border-style: none;
+    opacity: 70%;
+    width: 100px;
+    padding: 2px;
+    font-family: 'Righteous', cursive;
+
+}
+
+#submit {
+    opacity: 90%;
+    background-color: #47443F;
+    border-style: none;
+    padding: 2px 8px;
+    color: white;
+    font-family: 'Righteous', cursive;
+
+}
+
+#eurAmount {
+    margin-top: 30px;
+}
+
+#result {
+    font-size: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 5% 15%;
+    }
+}
+
