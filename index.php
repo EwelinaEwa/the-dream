@@ -14,10 +14,21 @@
 </head>
 <body>
 
+<h1>Welcom to Tonga</h1>
+
+<p>Current exchange rate is:</p>
+<p>1 PT (Tongan paʻanga) = 0,37 EUR (Euro)</p>
+<form action="" method="get">
+    <label for="value">Enter value in PT</label>
+    <input type="text" id="value", name="value">
+    <input type="submit">
+</form>
+<p>Amount in EUR is:</p>
+<p></p>
 <?php
 
-
 ?>
+
 
 </body>
 </html>
